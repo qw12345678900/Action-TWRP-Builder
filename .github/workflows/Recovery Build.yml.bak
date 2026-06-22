@@ -73,7 +73,7 @@ jobs:
 
     - name: Prepare the environment
       run: |
-        sudo apt update && sudo apt apt upgrade -y
+        sudo apt update && sudo apt upgrade -y
         DEBIAN_FRONTEND=noninteractive sudo apt install -yq \
             linux-modules-extra-$(uname -r) \
             gperf gcc-multilib gcc-10-multilib g++-multilib g++-10-multilib \
